@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Puzzle Assembly</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<meta name="author" content="Joseph Bryant">
+		<meta name="keywords" content="puzzle, flexbox, css grid">
+	</head>
+	<body>
+		<style>
+			section.grid-container {
+				display: grid;
+				grid-template-rows:1fr 2fr;
+				grid-template-columns:1fr 1fr 2fr 1fr;
+				margin:20px;
+			}
+			section div.grid1 {
+				background-color:#576ed4;
+				text-align:center;
+				border-color:#FFFFFF;
+				border:solid;
+				border-width:1px;
+				
+			}
+			section div.grid2 {
+				background-color:#8f9dd4;
+				text-align:center;
+				border-color:#FFFFFF;
+				border:solid;
+				border-width:1px;
+			}
+			section.flex {
+				display:flex;
+				flex-direction:row;
+				margin:50px;
+				margin-top:150px;
+				max-width:600px;
+				flex-wrap:wrap;
+			}
+		</style>
+		<section class="grid-container">
+			<div class="grid1">Name</div>
+			<div class="grid1">Puzzle</div>
+			<div class="grid1">Puzzle Description</div>
+			<div class="grid1">Date</div>
+			<div class="grid2">Joseph Bryant</div>
+			<div class="grid2">Fish</div>
+			<div class="grid2">Differently colored fishes swimming in water near rocks and plants</div>
+			<div class="grid2">04/18/24</div>
+		</section>
+		<section class="flex">
+			<div>
+				<img src="images/puzzle3_D.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_A.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_G.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_J.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_B.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_C.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_F.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_I.jpg">
+			</div>
+			<div>
+				<img src="images/puzzle3_E.jpg">
+			</div>
+			<div style="display:none;">
+				<img src="images/puzzle3_H.jpg">
+			</div>
+		</section>
+	</body>
+</html>
