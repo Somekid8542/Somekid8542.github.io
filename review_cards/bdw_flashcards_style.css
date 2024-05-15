@@ -1,0 +1,46 @@
+@keyframes titleAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+	40% {
+		font-size: 200%;
+		transform: rotate(360deg);
+	}
+	60% {
+		font-size: 200%;
+		transform: rotate(360deg);
+	}
+	100% {
+		font-size: 100%;
+		transform: rotate(0deg);
+	}
+}
+div.title {
+text-align: center;
+color: green;
+animation-name: titleAnimation;
+animation-duration: 3s;
+animation-timing-function: ease;
+}
+section {
+	margin: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr
+	width: 100%;
+}
+div.card {
+	background-color: rgb(200, 200, 255);
+	color: rgb(200, 150, 0);
+	height: 200px;
+	border: 1px solid black;
+	margin: 100px;
+	text-align: center;
+	transition: background-color 2s;
+}
+div.card:hover {
+	background-color: rgb(200, 150, 0);
+}
+div.card span {
+	color: rgb(200, 200, 255);
+}
